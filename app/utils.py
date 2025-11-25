@@ -2,7 +2,7 @@ import cv2
 import os
 
 def load_image(file_name):
-    caminho = os.path.join("photos", file_name)
+    caminho = os.path.join("Photos", file_name)
     img = cv2.imread(caminho)
     return img
 
