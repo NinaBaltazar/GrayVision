@@ -1,10 +1,9 @@
 import cv2
 import os
 
-def load_image(file_name):
-    caminho = os.path.join("Photos", file_name)
-    img = cv2.imread(caminho)
-    return img
-
-def gray_scale(img):
-    return cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+# Load an image from the 'photos' folder
+def load_image(filename):
+    # Build the full path: photos/filename
+    path = os.path.join("photos", filename)
+    # Read the image using OpenCV
+    return cv2.imread(path)
